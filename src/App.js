@@ -1,20 +1,20 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar";
-import Sidebar from "./components/Sidebar";
+
 import Home from "./components/Home";
 import About from "./components/About";
+import Layout from "./components/Layout";
 
 
 function App() {
     return (
         <Router>
-            <Navbar />
-            <Sidebar />
+        <Layout>
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
             </Routes>
+        </Layout>
         </Router>
     );
 }

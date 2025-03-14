@@ -1,9 +1,11 @@
 import React from 'react';
 import {Box, Container} from '@mui/material'
+import Navbar from "./Navbar";
 
 const Layout = ({ children }) => {
     return (
         <Box>
+            <Navbar/>
             <Container className="container">
                 { children }
             </Container>

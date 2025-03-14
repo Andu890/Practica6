@@ -11,7 +11,6 @@ import {
 import MenuIcon from "@mui/icons-material/Menu";
 
 const Sidebar = () => {
-
     const [drawerOpen, setDrawerOpen] = useState(false);
 
 
@@ -24,7 +23,6 @@ const Sidebar = () => {
 
     return (
         <>
-
             <IconButton edge="start" color="inherit" onClick={toggleDrawer(true)}>
                 <MenuIcon />
             </IconButton>
@@ -37,15 +35,14 @@ const Sidebar = () => {
                         <ListItem button component={Link} to="/">
                             <ListItemText primary="Inicio" />
                         </ListItem>
-                        <ListItem button component={Link} to="/productos">
-                            <ListItemText primary="Productos" />
-                        </ListItem>
-                        <ListItem button component={Link} to="/contacto">
-                            <ListItemText primary="Contacto" />
+                        <ListItem button component={Link} to="/About">
+                            <ListItemText primary="About" />
                         </ListItem>
                     </List>
                 </Box>
             </Drawer>
+
+
         </>
     );
 };

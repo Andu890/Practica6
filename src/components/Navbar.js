@@ -1,6 +1,6 @@
 import React from "react";
-import { AppBar, Toolbar, IconButton, Typography } from "@mui/material";
-import MenuIcon from "@mui/icons-material/Menu";
+import { AppBar, Toolbar, Typography } from "@mui/material";
+
 import Sidebar from "./Sidebar";
 
 const Navbar = () => {
@@ -14,20 +14,21 @@ const Navbar = () => {
         <>
             <AppBar position="static">
                 <Toolbar>
+                    <Sidebar drawerOpen={drawerOpen} toggleDrawer={toggleDrawer} />
 
-                    <IconButton edge="start" color="inherit" aria-label="menu" onClick={toggleDrawer(true)}>
-                        <MenuIcon />
-                    </IconButton>
+
 
 
                     <Typography variant="h6" sx={{ flexGrow: 1 }}>
                         Mi Aplicación
                     </Typography>
+
+
                 </Toolbar>
             </AppBar>
 
 
-            <Sidebar drawerOpen={drawerOpen} toggleDrawer={toggleDrawer} />
+
         </>
     );
 };
