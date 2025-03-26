@@ -1,67 +1,15 @@
 import React from 'react';
 import {Typography} from '@mui/material'
+import PokemonCard from "./PokemonCard";
+import {data} from "react-router-dom";
 
 const About = () => {
-    return (
-        <Typography>
-            Ella y yo<br/>
-            Dos locos viviendo una aventura castigada por Dios<br/>
-            Un laberinto sin salida donde el miedo se convierte en amor<br/>
-            Somos marido ella y yo<br/>
-            <br/>
-            Amigo, ella y yo<br/>
-            Solo nos vemos a escondidas para ahogar esta prohibida pasión<br/>
-            Y aunque tiene dueño, yo solo tengo un sueño, ser su protector<br/>
-            Somos su marido, ella y yo<br/>
-            <br/>
-            No me aconsejes en tu posición<br/>
-            <br/>
-            No sabes quién es víctima en la confusión<br/>
-            <br/>
-            No, no me aconsejes en tu posición<br/>
-            <br/>
-            Tú no sabes quién es víctima en esta confusión<br/>
-            <br/>
-            Mi amigo, ella y yo<br/>
-            Teníamos claro que era una locura esta relación<br/>
-            Pero la carne nos llamaba y la cama nos hacía una invitación<br/>
-            A solo hacer el amor<br/>
-            <br/>
-            No me aconsejes en tu posición<br/>
-            <br/>
-            Tú no sabes quién es víctima en esta confusión<br/>
-            <br/>
-            No, no me aconsejes en tu posición<br/>
-            <br/>
-            Tú no sabes quién es víctima en esta confusión<br/>
-            <br/>
-            Amigo, pido perdón, yo nunca te fallé<br/>
-            Me traicionaron las ganas de volverla a ver<br/>
-            Y aunque todavía no puedo creer<br/>
-            Lo que este amargo encuentro me hizo comprender<br/>
-            <br/>
-            Pues tú también llegaste a ese lugar<br/>
-            Donde tantas veces yo la fui a buscar<br/>
-            Y aunque no es fácil lo que voy a hacer<br/>
-            Admitiré que salí con tu mujer<br/>
-            <br/>
-            Salí con tu mujer<br/>
-            <br/>
-            Salí con tu mujer<br/>
-            <br/>
-            Salí con tu mujer<br/>
-            <br/>
-            Salí con tu mujer<br/>
-            <br/>
-            No me entiende<br/>
-            Que yo<br/>
-            Soy quien más sufro con todo esto, me mata el dolor<br/>
-            <br/>
-            Perdí un amigo<br/>
-            Por la tentación<br/>
-            Perdón...<br/>
-            <br/>
-        </Typography>
+        const data = {"count":1302,"items":[{"id":1,"name":"bulbasaur","weight":69,"types":[{"type":{"name":"grass","url":"https://pokeapi.co/api/v2/type/12/"},"slot":1},{"type":{"name":"poison","url":"https://pokeapi.co/api/v2/type/4/"},"slot":2}],"abilities":[{"ability":{"name":"overgrow","url":"https://pokeapi.co/api/v2/ability/65/"},"is_hidden":false,"slot":1},{"ability":{"name":"chlorophyll","url":"https://pokeapi.co/api/v2/ability/34/"},"is_hidden":true,"slot":3}],"sprites":{"front_default":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png"}},{"id":2,"name":"ivysaur","weight":130,"types":[{"type":{"name":"grass","url":"https://pokeapi.co/api/v2/type/12/"},"slot":1},{"type":{"name":"poison","url":"https://pokeapi.co/api/v2/type/4/"},"slot":2}],"abilities":[{"ability":{"name":"overgrow","url":"https://pokeapi.co/api/v2/ability/65/"},"is_hidden":false,"slot":1},{"ability":{"name":"chlorophyll","url":"https://pokeapi.co/api/v2/ability/34/"},"is_hidden":true,"slot":3}],"sprites":{"front_default":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png"}},{"id":3,"name":"venusaur","weight":1000,"types":[{"type":{"name":"grass","url":"https://pokeapi.co/api/v2/type/12/"},"slot":1},{"type":{"name":"poison","url":"https://pokeapi.co/api/v2/type/4/"},"slot":2}],"abilities":[{"ability":{"name":"overgrow","url":"https://pokeapi.co/api/v2/ability/65/"},"is_hidden":false,"slot":1},{"ability":{"name":"chlorophyll","url":"https://pokeapi.co/api/v2/ability/34/"},"is_hidden":true,"slot":3}],"sprites":{"front_default":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png"}},{"id":4,"name":"charmander","weight":85,"types":[{"type":{"name":"fire","url":"https://pokeapi.co/api/v2/type/10/"},"slot":1}],"abilities":[{"ability":{"name":"blaze","url":"https://pokeapi.co/api/v2/ability/66/"},"is_hidden":false,"slot":1},{"ability":{"name":"solar-power","url":"https://pokeapi.co/api/v2/ability/94/"},"is_hidden":true,"slot":3}],"sprites":{"front_default":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png"}},{"id":5,"name":"charmeleon","weight":190,"types":[{"type":{"name":"fire","url":"https://pokeapi.co/api/v2/type/10/"},"slot":1}],"abilities":[{"ability":{"name":"blaze","url":"https://pokeapi.co/api/v2/ability/66/"},"is_hidden":false,"slot":1},{"ability":{"name":"solar-power","url":"https://pokeapi.co/api/v2/ability/94/"},"is_hidden":true,"slot":3}],"sprites":{"front_default":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/5.png"}},{"id":6,"name":"charizard","weight":905,"types":[{"type":{"name":"fire","url":"https://pokeapi.co/api/v2/type/10/"},"slot":1},{"type":{"name":"flying","url":"https://pokeapi.co/api/v2/type/3/"},"slot":2}],"abilities":[{"ability":{"name":"blaze","url":"https://pokeapi.co/api/v2/ability/66/"},"is_hidden":false,"slot":1},{"ability":{"name":"solar-power","url":"https://pokeapi.co/api/v2/ability/94/"},"is_hidden":true,"slot":3}],"sprites":{"front_default":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png"}},{"id":7,"name":"squirtle","weight":90,"types":[{"type":{"name":"water","url":"https://pokeapi.co/api/v2/type/11/"},"slot":1}],"abilities":[{"ability":{"name":"torrent","url":"https://pokeapi.co/api/v2/ability/67/"},"is_hidden":false,"slot":1},{"ability":{"name":"rain-dish","url":"https://pokeapi.co/api/v2/ability/44/"},"is_hidden":true,"slot":3}],"sprites":{"front_default":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png"}},{"id":8,"name":"wartortle","weight":225,"types":[{"type":{"name":"water","url":"https://pokeapi.co/api/v2/type/11/"},"slot":1}],"abilities":[{"ability":{"name":"torrent","url":"https://pokeapi.co/api/v2/ability/67/"},"is_hidden":false,"slot":1},{"ability":{"name":"rain-dish","url":"https://pokeapi.co/api/v2/ability/44/"},"is_hidden":true,"slot":3}],"sprites":{"front_default":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/8.png"}},{"id":9,"name":"blastoise","weight":855,"types":[{"type":{"name":"water","url":"https://pokeapi.co/api/v2/type/11/"},"slot":1}],"abilities":[{"ability":{"name":"torrent","url":"https://pokeapi.co/api/v2/ability/67/"},"is_hidden":false,"slot":1},{"ability":{"name":"rain-dish","url":"https://pokeapi.co/api/v2/ability/44/"},"is_hidden":true,"slot":3}],"sprites":{"front_default":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/9.png"}},{"id":10,"name":"caterpie","weight":29,"types":[{"type":{"name":"bug","url":"https://pokeapi.co/api/v2/type/7/"},"slot":1}],"abilities":[{"ability":{"name":"shield-dust","url":"https://pokeapi.co/api/v2/ability/19/"},"is_hidden":false,"slot":1},{"ability":{"name":"run-away","url":"https://pokeapi.co/api/v2/ability/50/"},"is_hidden":true,"slot":3}],"sprites":{"front_default":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10.png"}}]}
+        return (
+        <div>
+                {data.items.map((item, index) => (<PokemonCard item = {item}/>))}
+
+        </div>
     )
-}
+};
 export default About;
