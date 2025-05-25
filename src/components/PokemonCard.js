@@ -1,6 +1,7 @@
 import { Button, Card, CardActionArea, CardActions, CardContent, Box, Typography } from '@mui/material';
+import { Link } from 'react-router-dom';
 
-const PokemonCard = ({ item, setSelectedPokemon }) => {
+const PokemonCard = ({ item }) => {
     return (
         <Card sx={{ maxWidth: 345 }}>
             <Box>
@@ -20,7 +21,7 @@ const PokemonCard = ({ item, setSelectedPokemon }) => {
                 </CardContent>
             </CardActionArea>
             <CardActions>
-                <Button size="small" color="secondary" onClick={() => setSelectedPokemon(item)}>
+                <Button size="small" color="secondary" LinkComponent={Link} to={`/pokemon/${item.id}`}>
                     Ver Detalle
                 </Button>
             </CardActions>

@@ -2,7 +2,7 @@ import React from 'react';
 import Carousel from './Carousel'
 
 
-const Home = ({}) => {
+const Home = () => {
     return (
         <div>
             <h1>Pagina Principal</h1>
